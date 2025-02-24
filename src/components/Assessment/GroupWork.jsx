@@ -271,10 +271,7 @@ const renderGroupWork = (apiResponse) => {
 
   return (
     <div className="container-fluid mt-3 mb-2 ps-5 pe-5 print-content">
-      <div id="headerContent" className="mt-4">
-        <div className="d-flex justify-content-center">
-          <h2 className="mb-5">Your High School Name</h2>
-        </div>
+      <div id="headerContent" className="section">
         <div className="d-flex justify-content-between mt-5 mb-5">
           <h5>Name : <span style={nameStyle}></span></h5>
           <h5 className="me-3">Date : <span style={dateStyle}></span></h5>
@@ -285,7 +282,6 @@ const renderGroupWork = (apiResponse) => {
       <p><strong>Topic:</strong> {apiResponse.topic}</p>
       <p><strong>Learning Objective:</strong> {apiResponse.learning_objective}</p>
       <p><strong>Group Size:</strong> {apiResponse.group_size}</p>
-
       <h6><strong>Roles:</strong></h6>
       <ul>
         {apiResponse.roles.map((role, index) => (

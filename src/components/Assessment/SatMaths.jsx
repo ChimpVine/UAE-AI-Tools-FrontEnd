@@ -256,8 +256,10 @@ export default function SatMath({ BASE_URL }) {
                 <button
                   className="btn btn-sm me-2 mt-2 no-print"
                   style={btnStyle}
-                  onClick={() => setApiResponse(null)}
-                >
+                  onClick={() => {
+                    setApiResponse(null);
+                    setShowAnswers(false);
+                  }}>
                   <FaArrowLeft /> Generate Another SAT Maths
                 </button>
                 <button
